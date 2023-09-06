@@ -1,9 +1,15 @@
 import Header from "@/components/elements/landingPage/header";
+import News from "@/components/elements/landingPage/news";
 
 export default function Home() {
   return (
-    <main className="container pt-3">
-      <Header />
+    <main>
+      <section className="container pt-3">
+        <Header />
+      </section>
+      <section className="bg-body-secondary mt-5">
+        <News />
+      </section>
     </main>
   );
 }

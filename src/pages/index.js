@@ -1,9 +1,9 @@
+import Header from "@/components/elements/landingPage/header";
+
 export default function Home() {
   return (
-    <main className="container">
-      <div className="row">
-        <h1>Testt</h1>
-      </div>
+    <main className="container pt-3">
+      <Header />
     </main>
   );
 }

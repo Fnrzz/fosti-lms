@@ -5,14 +5,13 @@
   justify-content: center;
   align-items: center;
   font-weight: 700;
-  color: #2d3e50;
-  background-color: #ffff;
-  border: 2px solid #2d3e50;
+  color: #ffff;
+  background-color: #2d3e50;
   border-radius: 24px;
   font-size: 14px;
 }
 
 .btn-custom:hover {
-  background-color: #2d3e50;
+  background-color: black;
   color: #ffff;
 }

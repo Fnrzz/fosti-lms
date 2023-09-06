@@ -35,11 +35,6 @@ const Navbar = () => {
                 Pricing
               </a>
             </li>
-            <li className="nav-item">
-              <a className="nav-link disabled" aria-disabled="true">
-                Disabled
-              </a>
-            </li>
           </ul>
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">

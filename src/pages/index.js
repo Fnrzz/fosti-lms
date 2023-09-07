@@ -1,3 +1,4 @@
+import About from "@/components/elements/landingPage/about";
 import Header from "@/components/elements/landingPage/header";
 import News from "@/components/elements/landingPage/news";
 
@@ -9,6 +10,9 @@ export default function Home() {
       </section>
       <section className="bg-body-secondary mt-5">
         <News />
+      </section>
+      <section className="mt-5">
+        <About />
       </section>
     </main>
   );

@@ -1,0 +1,12 @@
+.accordion-about {
+  height: 500px;
+}
+.fade-image {
+  transition: opacity 0.5s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .accordion-about {
+    height: 350px;
+  }
+}

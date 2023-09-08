@@ -1,5 +1,5 @@
 import React from "react";
-import AccrodionAbout from "@/components/ui/accrodionAbout";
+import AccrodionAbout from "@/components/ui/accordionAbout";
 
 const About = () => {
   return (

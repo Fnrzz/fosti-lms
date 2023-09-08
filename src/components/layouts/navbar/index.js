@@ -1,8 +1,29 @@
 import ButtonPrimary from "@/components/ui/buttonPrimary";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      window.scrollY > 0 ? setIsScrolled(true) : setIsScrolled(false);
+    };
+
+    // Add scroll event listener
+    window.addEventListener("scroll", handleScroll);
+
+    // Remove the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="navbar navbar-expand-lg bg-white shadow-sm">
+    <nav
+      className={`navbar navbar-expand-lg bg-white ${
+        isScrolled ? "shadow-sm" : ""
+      } fixed-top`}
+    >
       <div className="container">
         <a className="navbar-brand fw-bold" href="#">
           FOSTI LMS

@@ -2,3 +2,25 @@
 .quick-sand {
   font-family: "Quicksand", sans-serif;
 }
+
+/* Gaya kustom untuk panah tombol */
+.custom-prev-icon,
+.custom-next-icon {
+  border: 1px solid black; /* Menambahkan border hitam */
+  border-radius: 50%; /* Membuatnya berbentuk lingkaran */
+  background-color: black; /* Warna latar belakang hitam */
+  color: white; /* Warna panah putih */
+  padding: 10px; /* Menambahkan padding agar lebih terlihat */
+}
+
+/* Menghilangkan border bawaan pada panah tombol */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none;
+}
+
+/* Mengatur ukuran panah tombol */
+.carousel-control-prev,
+.carousel-control-next {
+  width: auto; /* Atur lebar agar sesuai dengan konten panah */
+}

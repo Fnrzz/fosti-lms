@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Styles from "./style.module.css";
-const CardNews = () => {
+
+const CardNews = ({ news }) => {
   return (
     <div className="d-flex justify-content-center">
       <div className="card rounded-4 shadow-sm" style={{ width: "75%" }}>

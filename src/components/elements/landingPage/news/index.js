@@ -1,7 +1,17 @@
-import CardNews from "@/components/ui/cardNews";
-import { AiOutlineArrowRight, AiOutlineArrowLeft } from "react-icons/ai";
+import Carousel from "@/components/ui/carousel";
+import GetNews from "./getNews";
+import { useEffect, useState } from "react";
 
 const News = () => {
+  const [newsData, setNewsData] = useState([]);
+
+  // useEffect(() => {
+  //   // Mengambil data dari API saat komponen dimuat
+  //   GetNews().then((data) => {
+  //     setNewsData(data);
+  //   });
+  // }, []);
+
   return (
     <div className="container py-5">
       <div className="row g-3 align-items-center">
@@ -13,41 +23,8 @@ const News = () => {
           </h6>
         </div>
         <div className="col-12 col-md-8">
-          <div id="carouselExampleFade" className="carousel slide ">
-            <div className="row justify-content-end mb-2">
-              <div className="col-2 d-flex justify-content-end ">
-                <button
-                  className="btn btn-secondary rounded-4 d-flex align-items-center justify-content-center"
-                  type="button"
-                  data-bs-target="#carouselExampleFade"
-                  data-bs-slide="prev"
-                >
-                  <AiOutlineArrowLeft />
-                </button>
-              </div>
-              <div className="col-2">
-                <button
-                  className="btn btn-secondary rounded-4 d-flex align-items-center justify-content-center"
-                  type="button"
-                  data-bs-target="#carouselExampleFade"
-                  data-bs-slide="next"
-                >
-                  <AiOutlineArrowRight />
-                </button>
-              </div>
-            </div>
-            <div className="carousel-inner">
-              <div className="carousel-item active">
-                <CardNews />
-              </div>
-              <div className="carousel-item">
-                <CardNews />
-              </div>
-              <div className="carousel-item">
-                <CardNews />
-              </div>
-            </div>
-          </div>
+          {/* <Carousel newsData={newsData} /> */}
+          <Carousel />
         </div>
       </div>
     </div>

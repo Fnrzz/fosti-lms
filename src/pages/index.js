@@ -1,5 +1,6 @@
 import About from "@/components/elements/landingPage/about";
 import Header from "@/components/elements/landingPage/header";
+import LearningPath from "@/components/elements/landingPage/learningPath";
 import News from "@/components/elements/landingPage/news";
 
 export default function Home() {
@@ -13,6 +14,9 @@ export default function Home() {
       </section>
       <section className="mt-5">
         <About />
+      </section>
+      <section className="mt-5">
+        <LearningPath />
       </section>
     </main>
   );

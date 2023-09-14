@@ -1,4 +1,4 @@
-import Carousel from "@/components/ui/carousel";
+import CarouselNews from "@/components/ui/carouselNews";
 import GetNews from "./getNews";
 import { useEffect, useState } from "react";
 
@@ -24,7 +24,7 @@ const News = () => {
         </div>
         <div className="col-12 col-md-8">
           {/* <Carousel newsData={newsData} /> */}
-          <Carousel />
+          <CarouselNews />
         </div>
       </div>
     </div>

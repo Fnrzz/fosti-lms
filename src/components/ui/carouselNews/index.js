@@ -2,7 +2,7 @@ import React from "react";
 import CardNews from "@/components/ui/cardNews";
 import { AiOutlineArrowRight, AiOutlineArrowLeft } from "react-icons/ai";
 
-const Carousel = ({ newsData }) => {
+const CarouselNews = ({ newsData }) => {
   return (
     <div id="carouselExampleFade" className="carousel slide ">
       <div className="row justify-content-end mb-3">
@@ -50,4 +50,4 @@ const Carousel = ({ newsData }) => {
   );
 };
 
-export default Carousel;
+export default CarouselNews;
